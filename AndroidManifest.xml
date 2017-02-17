@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xyz.ainunsalisutami.cirebontravelguide">
+
+    <uses-permission android:name="xyz.ainunsalisutami.cirebontravelguide.permission.MAPS_RECEIVE" />
+
+    <permission
+        android:name="xyz.ainunsalisutami.cirebontravelguide.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".AngkotActivity"
+            android:label="@string/title_activity_angkot" />
+        <activity
+            android:name=".GalleryActivity"
+            android:label="@string/title_activity_gallery" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyASGctdAx7dXhYWGT2x9QO5BvPOl-xsQhU" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".WisataKategori"
+            android:label="@string/kat_wisata" />
+        <activity android:name=".WisataAlamActivity" />
+        <activity android:name=".WisataSejarahActivity" />
+        <activity android:name=".WisataReligiActivity" />
+        <activity android:name=".WisataSeniKerajinanActivity" />
+        <activity
+            android:name=".DetailWisataActivity"
+            android:label="@string/det_wisata" />
+        <activity
+            android:name=".HotelKategori"
+            android:label="@string/kat_hotel" />
+        <activity
+            android:name=".KulinerKategori"
+            android:label="@string/kat_kuliner" />
+        <activity
+            android:name=".DetailKulinerActivity"
+            android:label="@string/det_kuliner" />
+        <activity android:name=".KulinerOlehActivity" />
+        <activity android:name=".KulinerMakananActivity" />
+        <activity android:name=".HotelBintang1" />
+        <activity android:name=".HotelBintang2" />
+        <activity android:name=".HotelBintang3" />
+        <activity android:name=".HotelBintang4" />
+        <activity
+            android:name=".DetailHotelActivity"
+            android:label="@string/det_hotel" />
+        <activity android:name=".WisataActivity" />
+        <activity android:name=".HotelActivity" />
+        <activity android:name=".MapHotel" />
+        <activity
+            android:name=".MapWisata"
+            android:label="@string/title_activity_map_wisata" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".MapKuliner"></activity>
+    </application>
+
+</manifest>

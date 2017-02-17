@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cirebon Travel Guide</string>
+    <string name="title_activity_angkot">Angkutan Umum</string>
+    <string name="title_activity_gallery">Gallery</string>
+    <string name="default_place_text">Select a place to get started</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_map_wisata">Map Wisata</string>
+    <string name="title_activity_map_hotel">Map Hotel</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="kat_wisata">Wisata</string>
+    <string name="kat_kuliner">Kuliner</string>
+    <string name="kat_hotel">Hotel</string>
+    <string name="det_wisata">Detail Wisata</string>
+    <string name="det_kuliner">Detail Kuliner</string>
+    <string name="det_hotel">Detail Hotel</string>
+</resources>
